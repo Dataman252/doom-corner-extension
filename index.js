@@ -44,7 +44,9 @@ document.addEventListener('DOMContentLoaded', () => {
     iframe.focus(); 
     ui.quitBtn.style.display = 'block';
     ui.nowPlaying.textContent = file.name;
-    ui.ctrlText.textContent = "Press the Menu button in the game (or hover top left) to change controls and save states.";
+    
+    // THE FIX: Inject a permanent keyboard cheat sheet into the UI bar
+    ui.ctrlText.innerHTML = "<b>KEYS:</b> Arrows=Move | <b>X</b>=A | <b>Z</b>=B | <b>S</b>=X | <b>A</b>=Y | <b>Q</b>=L | <b>W</b>=R | <b>Enter</b>=Start | <b>Shift</b>=Select &nbsp;&nbsp;<i>(Hover top-left to remap)</i>";
 
     const fileBuffer = await file.arrayBuffer();
     iframe.contentWindow.postMessage({ action: 'load', buffer: fileBuffer, name: file.name, volume: isMuted ? 0 : currentVolume }, '*');
@@ -72,6 +74,5 @@ document.addEventListener('DOMContentLoaded', () => {
     sendVol(isMuted ? 0 : currentVolume);
   });
   
-  // This is the magic line that mutes the game when Alt+Shift+D minimizes it!
   document.addEventListener('visibilitychange', () => sendVol(document.hidden ? 0 : (isMuted ? 0 : currentVolume)));
 });
