@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Doom Corner",
+  "version": "6.0",
+  "description": "Cloud-powered retro emulator with local library support.",
+  "permissions": ["activeTab", "scripting", "storage", "history"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {},
+  "icons": {
+    "16": "Logo.png",
+    "48": "Logo.png",
+    "128": "Logo.png"
+  },
+  "commands": {
+    "toggle-boss-key": {
+      "suggested_key": { "default": "Alt+Shift+D" },
+      "description": "Instantly show/hide the game"
+    }
+  }
+}
