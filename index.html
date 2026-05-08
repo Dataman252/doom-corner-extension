@@ -16,16 +16,6 @@
   button { background: #12121e; border: 1px solid #162440; border-radius: 4px; color: #3a7fd4; font-weight: bold; padding: 8px 14px; cursor: pointer; font-size: 12px; margin: 5px; }
   button:hover { background: #162440; color: #7ab8ff; }
   select { background: #0b0b14; color: #3a7fd4; border: 1px solid #162440; padding: 8px; font-size: 14px; border-radius: 4px; width: 280px; margin-bottom: 15px; }
-
-  #remap-modal { position: absolute; inset: 0; background: rgba(0,0,0,0.9); z-index: 100; display: none; align-items: center; justify-content: center; color: #fff; }
-  
-  /* NEW: Scrollbar for the long index of controls */
-  #remap-list { max-height: 60vh; overflow-y: auto; padding-right: 10px; }
-  #remap-list::-webkit-scrollbar { width: 8px; }
-  #remap-list::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
-  
-  .remap-row { display: flex; justify-content: space-between; width: 280px; margin-bottom: 10px; align-items: center; font-family: monospace; font-size: 14px; }
-  .bind-btn { width: 120px; background: #222; border: 1px solid #444; color: #ffb84d; flex-shrink: 0; }
 </style>
 </head>
 <body>
@@ -41,23 +31,11 @@
       </div>
       <div id="library-view" style="display: none;">
         <select id="rom-select"></select><br>
-        <button id="remap-btn">⚙️ REMAP CONTROLS</button>
         <button id="play-btn">▶ START GAME</button>
       </div>
     </div>
   </div>
-  <iframe id="game-frame" src="https://dataman252.github.io/doom-corner-engine/sandbox.html?v=4"></iframe>
-</div>
-
-<div id="remap-modal">
-  <div style="background: #111; padding: 20px; border: 1px solid #333; border-radius: 8px;">
-    <h3 style="margin-top:0;">Map Controls per Game</h3>
-    <div id="remap-list"></div>
-    <div style="margin-top: 15px; text-align: center;">
-      <button id="save-binds-btn" style="background:#16401f; color:#7aff9a;">SAVE & CLOSE</button>
-      <button id="cancel-binds-btn">CANCEL</button>
-    </div>
-  </div>
+  <iframe id="game-frame" src="https://dataman252.github.io/doom-corner-engine/sandbox.html?v=7"></iframe>
 </div>
 
 <div id="controls-bar">
