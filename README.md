@@ -2,10 +2,10 @@
 A stealthy, cloud-powered retro emulator that lives entirely inside a Chrome popup. 
 
 **Features:**
-* **Cloud Engine:** Powered by a remote 200MB WebAssembly engine so the extension takes up less than 20KB on your hard drive.
-* **Zero Piracy Risk:** Bring your own local ROM folder. No games are hosted online.
-* **Boss Key:** Press `Alt+Shift+D` to instantly mute and hide the game window.
-* **Cloud Saves:** Your custom controller mappings automatically sync to your Google Account.
+* **Lightning Fast CDN Engine:** Powered directly by the official EmulatorJS Content Delivery Network. The extension takes up less than 20KB on your hard drive and requires zero server maintenance.
+* **Zero Piracy Risk:** Bring your own local ROM folder. No games are hosted online, and your files never leave your computer.
+* **Boss Key Stealth:** Press `Alt+Shift+D` to instantly minimize the game window and perfectly mute the audio.
+* **Native Saves & Controller Support:** Hover over the top-left corner during gameplay to access the built-in console menu. You can map PlayStation/Xbox controllers, configure multiplayer, and create instant Save States (saves securely to your local browser).
 
 ### How to Install (Takes 30 seconds)
 1. Click the green **Code** button at the top of this page and select **Download ZIP**.
